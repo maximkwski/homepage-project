@@ -30,6 +30,12 @@ img {
     max-width: 100%;
 }
 
+.icon {
+    width: 30px;
+}
+
+/* HEADER */
+
 #about {
     border: 1px solid pink;
 
@@ -62,7 +68,8 @@ img {
 
 }
 
-.about__info p {
+.about__info p,
+.item__description {
     color: rgb(88, 85, 85);
 }
 
@@ -82,5 +89,41 @@ img {
 /* portfolio section */
 
 #portfolio {
-    background-color: antiquewhite;
+    padding: 1em 0 2em;
+}
+
+.porfolio__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2em;
+}
+
+.item {
+    box-shadow: 2px 5px 10px #888888;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.name-links h3 {
+    margin: 0;
+}
+
+.item__description {
+    padding: 0 0.5em;
+    font-size: 1.125rem;
+}
+
+
+
+.item__links {
+    margin-left: auto;
 }
