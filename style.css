@@ -34,8 +34,7 @@ a {
     color: white;
 }
 
-a>img:hover,
-a:focus {
+a>img:hover {
     animation: pulse 0.5s infinite alternate;
 }
 
@@ -127,8 +126,7 @@ a:focus {
     justify-content: space-between;
 }
 
-.item:hover,
-.item:active {
+.item:hover {
     transform: scale(1.1);
 }
 
